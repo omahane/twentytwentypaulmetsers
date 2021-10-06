@@ -1,0 +1,34 @@
+/*
+  Theme Name:  Twenty Twenty Paul Metsers
+  Description: Twenty Twenty child theme for Paul Metsers
+  Version:     1.0.0
+  Author:      Christian Burk
+  Template:    twentytwenty
+  Text Domain: twentytwentypaulmetsers
+*/
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+/* Colors */
+#site-header {
+  background-color: #E97660;
+  color: white;
+}
+#site-header .header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+@media (min-width: 1000px) {
+  #site-header .header-inner .header-titles-wrapper {
+    max-width: 100%;
+  }
+}
+#site-header .header-inner .site-title {
+  display: block;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 5em;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */
