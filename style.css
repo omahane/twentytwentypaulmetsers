@@ -6,16 +6,19 @@
   Template:    twentytwenty
   Text Domain: twentytwentypaulmetsers
 */
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;600;700;800;900&display=swap");
+/* Breakpoints */
 /* Colors */
 #site-header {
   background-color: #E97660;
   color: white;
+  height: 12rem;
 }
 #site-header .header-inner {
   display: flex;
   flex-direction: column;
   align-items: start;
+  padding: 0;
 }
 @media (min-width: 1000px) {
   #site-header .header-inner .header-titles-wrapper {
@@ -24,11 +27,77 @@
 }
 #site-header .header-inner .site-title {
   display: block;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 5em;
+  font-family: "Raleway", sans-serif;
+  font-size: 8rem;
   font-weight: 100;
-  margin-bottom: 1rem;
   text-transform: uppercase;
+}
+#site-header .header-inner .header-navigation-wrapper ul {
+  justify-content: flex-start;
+}
+#site-header .header-inner .header-navigation-wrapper a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+h1.entry-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #E97660;
+}
+
+.singular .entry-header {
+  padding: 0;
+}
+
+.post-inner .wp-block-columns.full-width {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.post-inner .wp-block-columns.full-width div:nth-child(1) {
+  width: 235px;
+}
+.post-inner .wp-block-columns.full-width div:nth-child(1) figure {
+  width: 235px;
+  margin: 0;
+}
+
+blockquote {
+  background-color: #ffddce;
+  font-size: 0.8em;
+  padding-right: 1ch;
+}
+
+li {
+  margin: 0;
+}
+
+/* FOOTER */
+.footer-widgets.column-one.grid-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footer-widgets.column-one.grid-item {
+    flex-wrap: nowrap;
+  }
+}
+.footer-widgets.column-one.grid-item .widget.widget_block {
+  margin: 0;
+}
+.footer-widgets.column-one.grid-item .widget.widget_block figure {
+  width: 10%;
+  max-width: 40vw;
+  min-width: 10ch;
+}
+.footer-top-visible .footer-nav-widgets-wrapper,
+.footer-top-hidden #site-footer {
+  margin-top: 0rem;
 }
 
 /*# sourceMappingURL=style.css.map */
